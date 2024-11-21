@@ -141,7 +141,7 @@ LOGGING = {
         'file': {
             'formatter': 'standard',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': BASE_DIR / 'log_files' / os.getenv('LOG_FILE_NAME', 'log.log'),
+            'filename': BASE_DIR / 'logs' / os.getenv('LOG_FILE_NAME', 'log.log'),
             # 'maxBytes': 15728640,  # 1024 * 1024 * 15B = 15MB
             'maxBytes': 1024 * 1024 * 2,
             'backupCount': 10,
