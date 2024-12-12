@@ -10,7 +10,7 @@
 <h1>Diary</h1>
     {% for r in results %}
         <fieldset>
-            <legend class="content_tile">{{r.date}}</legend>
+            <legend class="content_title">{{r.date}}</legend>
                 Create at:<label class="time">{{r.create_at}}</label>  Update at:<label class="time">{{r.update_at}}</label>
             <div class="content">
                 <p>
