@@ -8,4 +8,4 @@ def show(request):
          'create_at': 123,
          'update_at': 123}
     ]
-    return render(request, 'home.html', locals())
+    return render(request, 'articles/show.html', locals())
