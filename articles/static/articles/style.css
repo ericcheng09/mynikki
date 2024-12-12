@@ -1,6 +1,6 @@
 
 body {
-    background-color: #aec5cc;
+    background-color: #e6feff;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 }
 
 fieldset {
-    background-color: #b8dce7;
+    background-color: #a6c7d1;
     border-radius: 5px;
     /* margin: 50px; */
     border: 0;
@@ -17,20 +17,22 @@ fieldset {
 }
 
 .content_title {
-    background-color: #388391;
+    background-color: #5e8bec;
     padding: 10px;
     /* width: 100px; */
+    font-weight: bold;
     border-radius: 5px;
 }
 
 .content {
     margin: 0;
     text-align: start;
-    font-weight: bold;
+   
 }
 
 .time {
     font-weight: bold;
+    font-size: small;
 }
 
 @font-face {

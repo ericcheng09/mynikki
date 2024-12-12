@@ -11,7 +11,7 @@
     {% for r in results %}
         <fieldset>
             <legend class="content_title">{{r.date}}</legend>
-                Create at:<label class="time">{{r.create_at}}</label>  Update at:<label class="time">{{r.update_at}}</label>
+            <label class="time">Create at:{{r.create_at}}</label>  <label class="time">Update at:{{r.update_at}}</label>
             <div class="content">
                 <p>
                     {{r.content}}
