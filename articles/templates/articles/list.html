@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Diary{% endblock %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'articles/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Diaries</h1>
+    {% for r in results %}
+        <fieldset>
+            <legend class="content_title">{{r.date}}</legend>
+            <label class="time">Create at:{{r.create_at}}</label>  <label class="time">Update at:{{r.update_at}}</label>
+            <div class="content">
+                <p>
+                    {{r.content}}
+                    <a href="/articles/{{r.id}}">more</a>   
+                </p>    
+            </div>  
+        </fieldset>
+    {% empty %}
+    Not Any Diary is written. Try to write one now by login in.
+    {% endfor %}
+{% endblock %}

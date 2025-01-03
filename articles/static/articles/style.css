@@ -1,11 +1,11 @@
 
 body {
-    background-color: #e6feff;
+    background-color: #c8dedf;
 }
 
 h1 {
     color: rgb(0, 0, 0);
-
+    text-align: center;
 }
 
 fieldset {
@@ -13,11 +13,11 @@ fieldset {
     border-radius: 5px;
     /* margin: 50px; */
     border: 0;
-    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .content_title {
-    background-color: #5e8bec;
+    background-color: #84aafc;
     padding: 10px;
     /* width: 100px; */
     font-weight: bold;
@@ -33,6 +33,15 @@ fieldset {
 .time {
     font-weight: bold;
     font-size: small;
+}
+
+.detail {
+    background-color: #a6c7d1;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    min-height: 80vh
 }
 
 @font-face {

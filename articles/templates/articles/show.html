@@ -7,18 +7,14 @@
 {% endblock %}
 
 {% block content %}
-<h1>Diary</h1>
-    {% for r in results %}
-        <fieldset>
-            <legend class="content_title">{{r.date}}</legend>
-            <label class="time">Create at:{{r.create_at}}</label>  <label class="time">Update at:{{r.update_at}}</label>
-            <div class="content">
-                <p>
-                    {{r.content}}
-                </p>
-            </div>          
-        </fieldset>
-    {% empty %}
-    No Content
-    {% endfor %}
+<h1>{{date}}</h1>
+<a href="/articles">Back To List</a>
+<div class="detail">
+    <label class="time">Create at:{{create_at}}</label>  <label class="time">Update at:{{update_at}}</label>
+    <div class="detail-content">
+        <p>
+            {{content}}
+        </p>
+    </div>        
+</div>
 {% endblock %}
