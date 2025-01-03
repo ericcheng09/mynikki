@@ -8,7 +8,7 @@
 
 {% block content %}
 <h1>{{date}}</h1>
-<a href="/articles">Back To List</a>
+<a href="{% url 'all_article' %}">Back To List</a>
 <div class="detail">
     <label class="time">Create at:{{create_at}}</label>  <label class="time">Update at:{{update_at}}</label>
     <div class="detail-content">

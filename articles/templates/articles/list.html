@@ -10,9 +10,9 @@
 <h1>Diaries</h1>
 <div>
     <span>Sort By:</span>
-    <a href="/articles/?sort_by=id">ID</a>
-    <a href="/articles/?sort_by=create_at">Create Time</a>
-    <a href="/articles/?sort_by=update_at">Update Time</a>
+    <a href="{% url 'all_article' %}?sort_by=id">ID</a>
+    <a href="{% url 'all_article' %}?sort_by=create_at">Create Time</a>
+    <a href="{% url 'all_article' %}?sort_by=update_at">Update Time</a>
 </div>
 
 
@@ -23,7 +23,7 @@
             <div class="content">
                 <p>
                     {{r.content}}
-                    <a href="/articles/{{r.id}}">more</a>   
+                    <a href="{% url 'article_detail' r.id %}">more</a>   
                 </p>    
             </div>  
         </fieldset>
