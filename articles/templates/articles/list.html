@@ -8,6 +8,14 @@
 
 {% block content %}
 <h1>Diaries</h1>
+<div>
+    <span>Sort By:</span>
+    <a href="/articles/?sort_by=id">ID</a>
+    <a href="/articles/?sort_by=create_at">Create Time</a>
+    <a href="/articles/?sort_by=update_at">Update Time</a>
+</div>
+
+
     {% for r in results %}
         <fieldset>
             <legend class="content_title">{{r.date}}</legend>
